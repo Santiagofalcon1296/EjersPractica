@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="121" id="QS6-e8-6vG" customClass="CustomCellsFilms" customModule="StartWars" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QS6-e8-6vG" id="y5e-9S-1ce">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ebx-uG-aUx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="121"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gin-p7-LLs">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyn-wF-Lse">
+                                <rect key="frame" x="0.0" y="20.333333333333336" width="393" height="80.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zod-cp-IPH">
+                                <rect key="frame" x="0.0" y="100.66666666666667" width="393" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ebx-uG-aUx" firstAttribute="top" secondItem="y5e-9S-1ce" secondAttribute="top" id="3GO-zS-U2U"/>
+                    <constraint firstAttribute="trailing" secondItem="ebx-uG-aUx" secondAttribute="trailing" id="NAe-3O-Kbd"/>
+                    <constraint firstAttribute="bottom" secondItem="ebx-uG-aUx" secondAttribute="bottom" id="Sre-2d-EpH"/>
+                    <constraint firstItem="ebx-uG-aUx" firstAttribute="leading" secondItem="y5e-9S-1ce" secondAttribute="leading" id="ce9-io-siJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstLabelFilm" destination="Gin-p7-LLs" id="V0G-pp-xwx"/>
+                <outlet property="secondLabelFilm" destination="gyn-wF-Lse" id="S4g-Jy-37v"/>
+                <outlet property="thirdLabelFilm" destination="zod-cp-IPH" id="ee2-P2-g69"/>
+            </connections>
+            <point key="canvasLocation" x="254" y="-55"/>
+        </tableViewCell>
+    </objects>
+</document>
